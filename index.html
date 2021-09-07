@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Giri Narasimha T - Portfolio</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content=" initial-scale=1, maximum-scale=1">
+    
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- slick slider -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- themefy-icon -->
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="plugins/iconified/favicon.ico" />
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="plugins/lang-icons/devicon.min.css">
+
+  </head>
+
+  <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Back to Top"><i class="fa fa-chevron-up"></i></button>
+    <button onclick="bottomFunction()" id="myBtnBtm" title="Go Down"><i class="fa fa-chevron-down"></i></button>
+
+
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="topFunction()">Home</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToObjective()">Objective</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToSkills()">Skills</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToEducation()">Education</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToProjects()">Projects</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToBadges()">Badges</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" onclick="scrollToContact()">Contact</a>
+            </li>
+            <li class="nav-item active nav-li">
+              <a class="nav-link" target="_blank" href="plugins/documents/Resume.pdf"><b>Resume</b></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero area -->
+    <section class="hero-area bg-primary" id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 mx-auto" id="name-text">
+            <h1 class="text-white font-tertiary">Hi! I’m<br>Giri Narasimha T</h1>
+          </div>
+        </div>
+      </div>
+      <div class="layer-bg w-100">
+        <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l2">
+        <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l3">
+        <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l4">
+        <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l5">
+        <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+      </div>
+      <div class="layer l55">
+        <img class="profile-pic" src="images/profile_photo.png" alt="" style="width: 30%;height:30%;">
+      </div>
+      <div class="layer" id="l6">
+        <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l7">
+        <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l8">
+        <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+      </div>
+      <div class="layer" id="l9">
+        <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+      </div>
+      <!-- social icon -->
+      <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+        <li class="mb-3"><a class="text-white"  href="mailto:girimaheshthammineni@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+        <li class="mb-3"><a class="text-white" href="https://www.linkedin.com/in/giri-narasimha-t-27ab95179" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li class="mb-3"><a class="text-white" href="https://github.com/GiriNarasimhaT"target="_blank"><i class="fa fa-github" ></i></a></li>
+      </ul>
+      <!-- /social icon -->
+    </section>
+    <!-- /hero area -->
+
+    <!-- Objective -->
+    <section class="section" id="objective">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <br><br>
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">Objective</h2>
+          </div>
+          <br><br><br><br>
+            <p class="font-secondary paragraph-lg text-dark">Seeking opportunities to join a company that helps enhancing my skills and knowledge along with 
+              contributing to the growth of the company.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Objective -->
+
+    <br><br><br><br>
+
+    <!-- skills -->
+    <section class="section" id="skills">
+      <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-title">Skills</h2>
+              </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="text-container">
+                                <h6><i class="fa-4x devicon-python-plain-wordmark colored"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="text-container">
+                                <h6><i class="fa-4x devicon-c-plain colored"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="text-container">
+                                <h6><i class="fa-2x devicon-html5-plain colored"></i>HTML <i class="fa-2x devicon-css3-plain colored"></i>CSS<br><i class="fa-2x devicon-javascript-plain colored"></i>JavaScript</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="text-container">
+                              <h6><i class="fa-4x devicon-php-plain colored"></i></h6>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="card-flyer">
+                        <div class="text-box">
+                            <div class="text-container">
+                                <h6><i class="fa-4x devicon-mysql-plain-wordmark colored"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="text-container">
+                              <h6><i class="fa-4x devicon-java-plain-wordmark colored"></i></h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="text-container">
+                              <h6><i class="fa-2x  devicon-git-plain colored"></i> Git <br><i class="fa-2x devicon-github-plain colored"></i> Github</h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                  <div class="card-flyer">
+                      <div class="text-box">
+                          <div class="text-container">
+                              <h6><i class="fa fa-3x fa-windows"></i><br>MS Office</h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- /skills -->
+
+    <!-- education -->
+    <section class="section position-relative" id="education">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">Education</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div class="mr-lg-5 mr-3">
+                <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+              </div>
+              <div>
+                <h4>B.E [CSE]</h4>
+                <p class="text-dark mb-1"><strong>66.84% [7.43 CGPA]</strong></p>
+                <p class="mb-0 text-light">Vidyavardhaka College of Engineering</p>
+                <p class="text-dark mb-1">2018-2022</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div class="mr-lg-5 mr-3">
+                <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+              </div>
+              <div>
+                <h4>Pre-University</h4>
+                <p class="text-dark mb-1"><strong>79.33%</strong></p>
+                <p class="mb-0 text-light">Sri Chaitanya PU College</p>
+                <p class="text-dark mb-1">2018</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div class="mr-lg-5 mr-3">
+                <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+              </div>
+              <div>
+                <h4>Matriculation</h4>
+                <p class="text-dark mb-1"><strong>86.04%</strong></p>
+                <p class="mb-0 text-light">Holy Cross E M High School</p>
+                <p class="text-dark mb-1">2016</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bg image -->
+      <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+    </section>
+    <!-- /Education -->
+
+    <!-- Projects-->
+    <section class="section" id="projects">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 mb-4 mb-md-0 card">
+            <a href="https://github.com/GiriNarasimhaT/food-ordering-website" target="_blank">
+              <div class="card active-bg-secondary hover-shadow shadow">
+                <div class="card-body text-center px-4 py-5">
+                  <i class="ti-layout icon mb-5 d-inline-block"></i>
+                  <h4 class="mb-4">Food Ordering <br> Website</h4>
+                  <p>A Food ordering website <br> using HTML, CSS, PHP <br> and MySQL.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0 card">
+            <a href="https://github.com/GiriNarasimhaT/Flight-Fare-Prediction" target="_blank">
+              <div class="card active-bg-primary hover-shadow shadow">
+                <div class="card-body text-center px-4 py-5">
+                  <i class="ti-pie-chart icon mb-5 d-inline-block"></i>
+                  <h4 class="mb-4">Flight Fare Prediction</h4>
+                  <p>A machine learning project using python, and flask framework for building website,
+                    Which can predict Flight fare using ML.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mb-4 mb-md-0 card">
+            <a href="https://github.com/GiriNarasimhaT/Bluetooth-Chat-App" target="_blank">
+              <div class="card active-bg-secondary hover-shadow shadow">
+                <div class="card-body text-center px-4 py-5">
+                  <i class="ti-mobile icon mb-5 d-inline-block"></i>
+                  <h4 class="mb-4">Bluetooth Chat Android Application</h4>
+                  <p>An android app to chat using Bluetooth for short ranges without internet connectivity.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /Projects-->
+
+    <!-- Badges -->
+    <section class="section" id="badges">
+      <div id="cards_landscape_wrap-2">
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-title">Badges</h2>
+                <br>
+                <div>
+                  <a class="badges" href="https://www.credly.com/badges/701180af-a0a4-43aa-a350-5a2a6e6eff8e/public_url" target="_blank"><img src="images/badges/introduction-to-cloud-development-with-html5-css3-and-javascript.png" alt=""/></a>
+                  <a class="badges" href="https://www.credly.com/badges/701180af-a0a4-43aa-a350-5a2a6e6eff8e/public_url" target="_blank"><img src="images/badges/python-for-data-science.png" alt="" /></a>
+                  <a class="badges" href="https://www.credly.com/badges/f4c675ed-fe2e-4db5-b4fe-e868e3974cf7/public_url" target="_blank"><img src="images/badges/data-analysis-using-python.png" alt="" /></a>
+                  <a class="badges" href="https://www.credly.com/badges/beaaf44c-671f-4b40-8bbb-b0b57cd7083e/public_url" target="_blank"><img src="images/badges/data-visualization-with-python.png" alt="" /></a>
+                  <a class="badges" href="https://www.credly.com/badges/6e2a8296-058f-480d-b2e3-4d4f1c54a402/public_url" target="_blank"><img src="images/badges/big-data-foundations-level-1.png" alt="" /></a>
+                  <a class="badges" href="https://www.credly.com/badges/201abeb6-8998-4497-a940-8daf9c24e290/public_url" target="_blank"><img src="images/badges/enterprise-design-thinking-practitioner.png" alt="" /></a>
+                  <a class="badges" href="https://www.credly.com/badges/9ed090cb-0675-4c12-972f-1713eddf8ad5/public_url" target="_blank"><img src="images/badges/enterprise-design-thinking-co-creator.png" alt="" /></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Badges -->
+
+    <!-- contact -->
+    <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Contact Info</h2>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <div class="bg-white rounded text-center p-5 shadow-down">
+              <h4 class="mb-80">Contact Form</h4>
+              <form action="#" class="row">
+                <div class="col-md-6">
+                  <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" id="message" class="form-control px-0 mb-4"
+                    placeholder="Type Message Here"></textarea>
+                </div>
+                <div class="col-lg-6 col-10 mx-auto">
+                  <a href="" class="btn btn-primary w-100">send</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+      <div class="border-top text-center border-dark">
+        <br><br><br><br><br>
+          <ul id="menu" style="text-align: center;">
+            <li style="padding: 10px;"><a class="text-white"  href="mailto:girimaheshthammineni@gmail.com" target="_blank"><i class="fa fa-3x fa-envelope-o"></i></a></li>
+            <li style="padding: 10px;"><a class="text-white" href="https://www.linkedin.com/in/giri-narasimha-t-27ab95179" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a></li>
+            <li style="padding: 10px;"><a class="text-white" href="https://github.com/GiriNarasimhaT" target="_blank"><i class="fa fa-3x fa-github" ></i></a></li>
+          </ul>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <script>
+      //Get the buttons:
+        mybutton = document.getElementById("myBtn");
+        mybuttonBtm=document.getElementById("myBtnBtm");
+
+        // When the user scrolls down 100px from the top of the document, show the button top and 4000px hide button bottom
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+          if (document.body.scrollTop > 3500 || document.documentElement.scrollTop > 3500) {
+              mybuttonBtm.style.display = "none";
+          } else {
+              mybuttonBtm.style.display = "block";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          $("html, body").animate({ scrollTop: "0" });
+        }
+        function bottomFunction() {
+          var scrollDiv = document.getElementById("contact").offsetTop;
+          window.scrollTo({ top: scrollDiv+500, behavior: 'smooth'});
+        }
+
+        function slideleft(){
+            var container = document.getElementById('scrollmenu');
+            scrollCompleted = 0;
+            var slideVar = setInterval(function(){
+                container.scrollLeft -= 90;
+                scrollCompleted += 10;
+                if(scrollCompleted >= 45){
+                    window.clearInterval(slideVar);
+                }
+            }, 50);
+        }
+
+        function slideright(){
+            var container = document.getElementById('scrollmenu');
+            scrollCompleted = 0;
+            var slideVar = setInterval(function(){
+                container.scrollLeft += 90;
+                scrollCompleted += 10;
+                if(scrollCompleted >= 45){
+                    window.clearInterval(slideVar);
+                }
+            }, 50);
+        }
+
+        function scrollToObjective(){
+          var scrollDiv = document.getElementById("objective").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function scrollToSkills(){
+          var scrollDiv = document.getElementById("skills").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function scrollToProjects(){
+          var scrollDiv = document.getElementById("projects").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function scrollToEducation(){
+          var scrollDiv = document.getElementById("education").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function scrollToBadges(){
+          var scrollDiv = document.getElementById("badges").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function scrollToContact(){
+          var scrollDiv = document.getElementById("contact").offsetTop;
+          window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
