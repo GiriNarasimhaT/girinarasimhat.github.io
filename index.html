@@ -373,19 +373,19 @@
           <div class="col-lg-8 mx-auto">
             <div class="bg-white rounded text-center p-5 shadow-down">
               <h4 class="mb-80">Contact Form</h4>
-              <form action="#" class="row">
+              <form class="row">
                 <div class="col-md-6">
-                  <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+                  <input type="text" id="name" name="From" placeholder="Full Name" class="form-control px-0 mb-4">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+                  <input type="email" id="email" name="Email" placeholder="Email Address" class="form-control px-0 mb-4">
                 </div>
                 <div class="col-12">
-                  <textarea name="message" id="message" class="form-control px-0 mb-4"
+                  <textarea name="Message" id="message" class="form-control px-0 mb-4"
                     placeholder="Type Message Here"></textarea>
                 </div>
                 <div class="col-lg-6 col-10 mx-auto">
-                  <a href="" class="btn btn-primary w-100">send</a>
+                  <button onclick="sendMail()" class="btn btn-primary w-100">Send</button>
                 </div>
               </form>
             </div>
@@ -486,6 +486,14 @@
         function scrollToContact(){
           var scrollDiv = document.getElementById("contact").offsetTop;
           window.scrollTo({ top: scrollDiv-70, behavior: 'smooth'});
+        }
+        function sendMail(){
+          var name=document.getElementById("name").value;
+          var email=document.getElementById("email").value;
+          var message=document.getElementById("message").value;
+          var newline="%0D%0A";
+          var messagelines=message.replaceAll("\n",newline);
+          open("mailto:girimaheshthammineni@gmail.com?subject=From Contact Form&body=From : "+name+newline+"Email : "+email+newline+newline+messagelines);
         }
     </script>
 
