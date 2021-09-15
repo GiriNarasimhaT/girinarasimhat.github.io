@@ -491,9 +491,16 @@
           var name=document.getElementById("name").value;
           var email=document.getElementById("email").value;
           var message=document.getElementById("message").value;
-          var newline="%0D%0A";
-          var messagelines=message.replaceAll("\n",newline);
-          open("mailto:girimaheshthammineni@gmail.com?subject=From Contact Form&body=From : "+name+newline+"Email : "+email+newline+newline+messagelines);
+          if(name=="" && email=="" && message=="")
+          {
+            window.alert("Please fill in the fields");
+          }
+          else
+          {
+            var newline="%0D%0A";
+            var messagelines=message.replaceAll("\n",newline);
+            window.open("mailto:girimaheshthammineni@gmail.com?subject=From Contact Form&body=From : "+name+newline+"Email : "+email+newline+newline+messagelines);
+          }
         }
     </script>
 
