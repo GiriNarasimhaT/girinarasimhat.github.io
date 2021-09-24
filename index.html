@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 
+    <!-- <meta name="theme-color" content="#41228e"> -->
+
     <title>Giri Narasimha T - Portfolio</title>
 
     <!-- mobile responsive meta -->
@@ -479,9 +481,17 @@
           var name=document.getElementById("name").value;
           var email=document.getElementById("email").value;
           var message=document.getElementById("message").value;
-          if(name=="" && email=="" && message=="")
+          if(name=="")
           {
-            window.alert("Please fill in the fields");
+            window.alert("Please fill in all fields");
+          }
+          else if(email=="")
+          {
+            window.alert("Please fill in all fields");
+          }
+          else if(message=="")
+          {
+            window.alert("Please fill in all fields");
           }
           else
           {
